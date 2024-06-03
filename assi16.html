@@ -1,96 +1,96 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>cafe</title>
-  </head>
-  <style>
-    .a {
-      background-color:rgb(252, 244, 244);
-      
-    }
+<html>
 
-    .b {
-      background-color:rgb(252, 244, 244);
-    }
+<head>
+    <title>Assignment-16</title>
+    <style>
+        .head {
+            position:relative;
+            width: 100%;
+            height: 400px;
+        }
 
-    .c {
-      background-color:rgb(252, 244, 244);
-      
-    }
+        .container {
+          position:absolute;
+          width: 100%;
+            height: 400px;
+            
 
-    .card {
-      height: 230px;
-      margin: 10px;
-      padding: 40px;
-      border-radius: 10px;
-      display: inline-block;
-      width: 190px;
-      border-color: black;
-      border: 3px solid black;;
-    }
-    .pic{
-      height: 150px;
-      width: 150px;
-      margin-left: 10px;
-      padding: 1px;
-      margin-top: -15px;
-    }
-    .txt{
-      margin-top: 15px;
-      padding-top: -20px;
+        }
 
-    }
-    
-   
-     
-    
-    
-  
-    
-  </style>
+        .img-card {
+            margin: 20px;
+            margin-left: 40px;
+            padding: 10px;
+            position:sticky;
+            background-color: #bfa9a9;
+            width: 200px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            border: 1px solid black;
 
-  <body>
-    <h1 class="txt">Welcome To Our Coffee Shop</h1>
-    
-    <div class="a card"> <img class="pic" src="c1" alt="Cappuccino pic">
-      <br>
-      <br>
-      <div class="txt">
-      <h3 >Cappuccino </h3>
-      Rs.180
-      <br>
-      <button>Buy</button>
-    </div>
-    </div>
-    <div class="b card"> <img class="pic" src="c0" alt="black pic">
-      <br>
-      <br>
-      <div class="txt">
-      <h3>Black Coffee </h3>
-      Rs.140
-      <br>
-      <button>Buy</button>
-    </div>
-  </div>
-    <div class="c card"> <img class="pic" src="c00" alt="hot coffee pic">
-      <br>
-      <br>
-      <div class="txt">
-      <h3>Hot Coffee </h3>
-     Rs.100
-     <br>
-      <button>Buy</button>
-    </div>
-    </div>
-      <div class="c card"> <img class="pic" src="cd" alt="cold coffee pic">
-        <br>
-        <br>
-        <div class="txt">
-       <h3> Cold Coffee </h3>
-      Rs.150
-      <br>
-      <button>Buy</button>
-      </div>
-      </div>
-  </body>
+        }
+
+        .img {
+            border-radius: 5px;
+            height: 150px;
+            width: 150px;
+            position: sticky;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        
+
+        .img-name {
+            text-align: center;
+        }
+
+        .price {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body >
+        <img class="head" src="c00" alt="">
+        <div class="container">
+            <div class="img-card">
+                <img src="cd" class="img" alt=" img"><br>
+                <h1 class="img-name"> Cold coffee </h1>
+                
+                <h2 class="price">Rs. <sup>₹</sup> 150</h2>
+
+            </div>
+
+            <div class="img-card">
+                <img src="coffee" class="img" alt=" img"> <br>
+                <h1 class="img-name">Black Tea</h1>
+                
+                <h2 class="price">Rs. <sup>₹</sup> 50</h2>
+
+            </div>
+            <div class="img-card">
+                <img src="coo" class="img" alt=" img"><br>
+                <h1 class="img-name">Hot Coffee</h1>
+                
+                <h2 class="price">Rs. <sup>₹</sup>180</h2>
+            </div>
+            <div class="img-card">
+                <img src="c4" class="img" alt=" img"><br>
+                <h1 class="img-name">Black Coffee</h1>
+                
+                <h2 class="price">Rs. <sup>₹</sup> 100</h2>
+
+
+            </div>
+            
+        </div>
+
+ 
+</body>
+
 </html>
