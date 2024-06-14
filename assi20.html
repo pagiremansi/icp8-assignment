@@ -1,96 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body class="body"><style>
-    .body{
-        margin:0%;
-    }
-.parent{
-display: flex;
-
-
-
-}
-.side{
-    width: 250px;
-    background-color:rgb(221, 221, 241);
-    min-height: 100vh;
-    
-
-
-
-}
-.content{width: 100%;
-    background-color: ;
-  
-
-
+    <title>Sidebar</title>
+    <style>
+        .body {
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-.sidebar-box{
-    border: 1px solid transparent;
-    margin:15px 10px ;
-    background-color: transparent;
-    display: inline-block;
-    height:70px;
-    width: 150px;
-   
+.slidebar-container {
     display: flex;
-    align-items: center;
-} 
-
-
-.sidebar-img{
-    height: 50px;
-    border: 12px solid  transparent;
-}
-.sidebar-text{
-    
-   
-
-}
-.profile{
-    border-radius: 50%;
-    height: 90px;
- position: relative;
- top: 10px;
 }
 
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color:rgb(24, 25, 25);
+    color: white;
+    padding-top: 20px;
+    position: fixed;
 
-</style>
+    text-align: center;
+    margin-bottom: 20px;
+    font: bold;
+}
+
+.nav-list {
+    padding: 0;
+    cursor: pointer;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-list a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(108, 200, 200);;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #555;
+    margin: 8px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.nav-list a:hover {
+    background-color: #555;
+    border-color: #666;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 275px;
+    width: 100%;
+}
+
+.section {
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
 
 
-    <div class="parent">
-<div class="side"><img src="profilepic.jpg" class="profile">
-    <p><h2>Mansi Pagire</h2></p>
-    <span class="sidebar-box">
-
-    
-    <span class="sidebar=text"><b><img src="home" alt="home pic"><a href="home.html">Home</a></b></span>
-</span>
-
-<span class="sidebar-box">
-    
-    <span class="sidebar=text"><b><img src="pro.png" alt="profile pic"><a href="profile.html">Profile</a></b></span>
-</span>
-<span class="sidebar-box">
-    
-    <span class="sidebar=text"><b><img src="reply.png" alt=" reply pic"><a href="reply.html">Reply</a></b></span>
-</span>
-<span class="sidebar-box">
-    
-    <span class="sidebar=text"><b><img src="notfi.png" alt="notification pic"><a href="notification.html">Notification</a></b></span>
-</span>
-</div>
 
 
-<div class="content"></div>
 
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.slidebar-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background-color:rgb(44, 203, 203);
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+
+    text-align: center;
+    margin-bottom: 20px;
+    font: bold;
+}
+
+.nav-list {
+    padding: 0;
+    cursor: pointer;
+
+    margin-bottom: 10px;
+}
+
+.nav-list a {
+    display: block;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #555;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nav-list a:hover {
+    background-color: #555;
+    border-color: #666;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 275px;
+    width: 100%;
+}
+
+.section {
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .section h1 {
+        font-size: 24px;
+    }
+
+    .section {
+        font-size: 14px;
+    }
+}
+
+/* Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 210px;
+    }
+
+    .section h1 {
+        font-size: 28px;
+    }
+
+    .section {
+        font-size: 15px;
+    }
+}
+
+/* Desktops (1025px and up) */
+@media (min-width: 1025px) {
+    .sidebar {
+        width: 280px;
+    }
+
+    .content {
+        margin-left: 290px;
+    }
+
+    .section h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
+
+<body class="body">
+
+    <div class="slidebar-container">
+        <div class="sidebar">
+            <h2>SIDEBAR</h2>
+            <ul class="nav-list">
+                <li><a href="#home">Home</a></li><br>
+                <li><a href="#login">Login</a></li><br>
+                <li><a href="#products">Products</a></li><br>
+                <li><a href="#feedback">Feedback</a></li><br>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div id="home" class="section">
+
+                <p><h1>Welcome</h1></p>
+            </div>
+        </div>
     </div>
-    
 </body>
+
 </html>
